@@ -1,12 +1,19 @@
 import styles from "../styles/Home.module.css";
+import {useEffect} from "react";
 
-const localStorage: { volume?: number } = { volume: 4 };
+interface VolumeStorage {
+  volume: number;
+}
 
-function initializeAudio() {
-  let volume = localStorage.volume || 0.5;
+function initializeAudio({volume}: VolumeStorage) {
+  return volume || 0.5;
 }
 
 const Exercise4 = () => {
+  useEffect(() => {
+    initializeAudio({volume: 1})
+  }, [])
+
   return (
     <main className={styles.container}>
       <h4>Exercise 4</h4>

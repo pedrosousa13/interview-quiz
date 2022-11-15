@@ -11,6 +11,7 @@ const Exercise1 = () => {
   return (
     <main className={styles.container}>
       <h4>Exercise 1</h4>
+      <p>{reminder}</p>
     </main>
   );
 };

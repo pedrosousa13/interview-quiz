@@ -9,6 +9,7 @@ const Exercise3 = () => {
   return (
     <main className={styles.container}>
       <h4>Exercise 3</h4>
+      <p>{addTriple([1, 2, 3])}</p>
     </main>
   );
 }
