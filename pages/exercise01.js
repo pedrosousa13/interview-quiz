@@ -13,6 +13,6 @@ const Exercise1 = () => {
       <h4>Exercise 1</h4>
     </main>
   );
-}
+};
 
-export default Exercise1
+export default Exercise1;
