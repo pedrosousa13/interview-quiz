@@ -4,7 +4,7 @@ interface VolumeStorage {
   volume?: number;
 }
 
-function initializeAudio({volume}: VolumeStorage) {
+export const initializeAudio = ({volume}: VolumeStorage) => {
   return volume || 0.5;
 }
 
