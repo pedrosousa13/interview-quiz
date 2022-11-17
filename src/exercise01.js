@@ -3,9 +3,7 @@ const placeholder = "{NAME}";
 const reminderTemplate =
   "{NAME} is due for another visit. Please call us, so we can set up a new appointment. We look forward to seeing you and {NAME} soon.";
 
-// What we want
-// Current output: "Leo is due for another visit. Please call us, so we can set up a new appointment. We look forward to seeing you and Leo soon.";
+// We want to replace {Name} with our pet's name everywhere it appears. But our code has a bug, can you fix it or write it a better way?
 
-// There is a problem with `replace`, do you know what it is?
 const reminder = reminderTemplate.replace(placeholder, petName);
 

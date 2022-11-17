@@ -1,8 +1,4 @@
-import styles from "../styles/Home.module.css";
-import {useEffect} from "react";
-
-// ** Spot the bug **
-// There's a case here where initializeAudio wouldn't work as expected.
+// There's a case here where initializeAudio, what is it and how can you fix it?
 
 interface VolumeStorage {
   volume?: number;
